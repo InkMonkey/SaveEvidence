@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>存证系统</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" style="width: 650px">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">
+            存证系统
+          </h1>
+          <hr>
+
+          <div class="text-center">
+          <h2>存证</h2>
+          </div>
+          <div>
+            <div id="saveEvidence">
+                <input id="uploadInput" type="file">
+                <br>
+                <input name="上传" type="submit" onclick="upload()">
+              </div>
+          </div>
+          <hr>
+
+          <div class="text-center">
+          <h2>取证</h2>
+          </div>
+          <div>
+            <div id="getEvidence">
+                <input id="downloadInput" type="text" placeholder="请输入文件Hash值">
+                <input name="下载" type="submit" onclick="download()">
+              </div>
+          </div>
+          <hr>
+
+          <div class="text-center">
+          <h2>文件信息</h2>
+          </div>
+          <div id="fileInfo">
+            <table class="table table-bordered text-center" >
+              <tr>
+                <td>文件名称</td>
+                <td id="fileName"></td>
+              </tr>
+              <tr>
+                <td>文件Hash</td>
+                <td id="fileHash"></td>
+              </tr>
+              <tr>
+                <td>文件路径</td>
+                <td id="filePath"></td>
+              </tr>
+              <tr>
+                <td>文件大小</td>
+                <td id="fileSize"></td>
+              </tr>
+              <tr>
+                <td>文件上传时间</td>
+                <td id="fileUploadTime"></td>
+              </tr>
+              <tr>
+                <td>授权下载用户</td>
+                <td>前方正在施工</td>
+              </tr>
+            </table>
+            <hr>
+            <p id="accountAddress" class="text-center">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
