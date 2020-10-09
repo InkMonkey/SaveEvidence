@@ -1,6 +1,6 @@
 # SaveEvidence
 
-项目为简单的存证智能合约，采用了官方提供的Pet Shop Truffle Box。本程序与[filemanage](https://github.com/InkMonkey/filemanage)搭配使用。
+项目为简单的存证智能合约，采用了官方提供的Pet Shop Truffle Box。本程序与[FileManage](https://github.com/InkMonkey/FileManage)搭配使用。
 
 宠物商店框架相关教程可参考[Pet Shop Truffle Box](https://github.com/truffle-box/pet-shop-box)。
 
